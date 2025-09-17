@@ -229,34 +229,38 @@ nav ul li a:hover::after {
 }
 
 /* Buttons */
-..btn {
-    display: inline-block;
-    margin: 50px auto 0;
-    padding: 14px 50px;
-    border: 1px solid #ff004f;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.3s;
+.btn {
+  display: inline-block;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s ease;
+  background: transparent;
 }
 
 .btn:hover {
-    background: #ff004f;
-    color: #fff;
+  background: #ff004f;
+  color: #fff;
 }
 
 .btn.btn2 {
-    background: #000;
-    color: #ff004f;   /* fixed from 'none' */
-    border: 1px solid #ff004f;
+  background: #000;
+  color: #ff004f;
+  border: 1px solid #ff004f;
+  display: block;
+  margin: 20px auto; /* centers button */
 }
 
+.btn.btn2:hover {
+  background: #ff004f;
+  color: #fff;
+}
 .btn.btn2:hover {
     background: #ff004f;
     color: #fff;
 }
-
-
 /* Contact */
 .contact-left {
     flex-basis: 35%;
@@ -408,5 +412,6 @@ nav .fa-solid {
         font-size: 14px;
     }
 }
+
 
 
