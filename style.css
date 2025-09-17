@@ -250,7 +250,7 @@ nav ul li a:hover::after {
   color: #ff004f;
   border: 1px solid #ff004f;
   display: block;
-  margin: 20px auto; /* centers button */
+  margin: 20px auto; 
 }
 
 .btn.btn2:hover {
@@ -332,7 +332,21 @@ form .btn2:hover {
     color: #fff;
 }
 
-/* Footer */
+a.btn {
+  display: inline-block;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;   
+  color: #ff004f;
+  background: #000;
+  transition: 0.3s ease;
+}
+
+a.btn:hover {
+  background: #ff004f;
+  color: #fff;
+}
 .copyright {
     width: 100%;
     text-align: center;
@@ -412,6 +426,7 @@ nav .fa-solid {
         font-size: 14px;
     }
 }
+
 
 
 
