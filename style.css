@@ -149,11 +149,12 @@
         }
         
         .tab-contents.active-tab {
-            display: block;
+                 display: block;
         }
         
-        .tab-links.active-link {
-            color: #ff004f;
+       .tab-links.active-link {
+               font-weight: bold;
+               color: #ff004f; /* highlight color */
         }
         /* Portfolio Section */
         
@@ -580,4 +581,5 @@
             .copyright {
                 font-size: 14px;
             }
+
         }
