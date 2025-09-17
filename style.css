@@ -235,7 +235,7 @@ nav ul li a:hover::after {
 }
 
 /* Buttons */
-.btn {
+..btn {
     display: inline-block;
     margin: 50px auto 0;
     padding: 14px 50px;
@@ -253,7 +253,7 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
     background: #000;
-    color: #ff004f;
+    color: #ff004f;   /* fixed from 'none' */
     border: 1px solid #ff004f;
 }
 
@@ -261,6 +261,7 @@ nav ul li a:hover::after {
     background: #ff004f;
     color: #fff;
 }
+
 
 /* Contact */
 .contact-left {
@@ -413,3 +414,4 @@ nav .fa-solid {
         font-size: 14px;
     }
 }
+
