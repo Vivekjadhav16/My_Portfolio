@@ -158,25 +158,27 @@
         function closemenu() {
             sidemenu.style.right = "-200px";
         }
+<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form>
 
-        // Google Sheet integration
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxZk3GzqH4NMzuWAWf9ejkAcQj9oUKgWyrg5eS3enNQgTBi42ocEf-hmPpIwfOUIHfQ/exec';
-        const form = document.forms['submit-to-google-sheet'];
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbxZk3GzqH4NMzuWAWf9ejkAcQj9oUKgWyrg5eS3enNQgTBi42ocEf-hmPpIwfOUIHfQ/execL>'
+  const form = document.forms['submit-to-google-sheet']
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    alert("✅ Message sent successfully!");
-                    form.reset();
-                })
-                .catch(error => {
-                    alert("❌ Error sending message. Please try again!");
-                    console.error('Error!', error.message);
-                });
-        });
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+ 
     </script>
 </body>
 </html>
+
 
 
