@@ -534,34 +534,44 @@
             .header-text h1 {
                 font-size: 30px;
             }
-            nav .fa-solid {
-                display: block;
-                font-size: 25px;
-                color: #fff;
-                cursor: pointer;
-            }
-            nav ul {
-                background: #ff004f;
-                position: fixed;
-                top: 0;
-                right: -200px;
-                width: 200px;
-                height: 100vh;
-                padding-top: 50px;
-                z-index: 2;
-                transition: right 0.5s ease;
-            }
-            nav ul li {
-                display: block;
-                margin: 25px;
-            }
-            nav ul .fa-xmark {
-                position: absolute;
-                top: 25px;
-                left: 25px;
-                cursor: pointer;
-                color: #fff;
-            }
+nav .fa-solid {
+  display: none;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;   /* start hidden */
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s ease;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-xmark {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    color: #fff;
+  }
+}
             .sub-title {
                 font-size: 40px;
             }
@@ -587,4 +597,5 @@
                 font-size: 14px;
             }
         }
+
 
